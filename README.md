@@ -74,4 +74,15 @@ src/
  
 - The `lives` variable is tracked but not yet used — HumbleBot currently has one shot
 - Coins can wander off screen edges
+
+## Received Peer Reviews
+
+### First 08/05/2026
+Overall Impression: This is a fantastic and nice game:) The concept of retiring alive is funny, and the risk and reward mechanic where collecting coins makes the robot bigger and slower is a brilliant gameplay design.  
+
+Code Quality: The code is excellently structured. You made great use of pygame sprite and group classes, which goes beyond the basic level. The logic is cleanly divided into separate classes and functions, making it very readable.  
+
+Suggestions for Improvement:  As you mentioned in the limitations, adding simple boundary checks (like if self.rect.x < 0:) inside the Coin class's update would prevent them from going off-screen.  In the Game class, pygame.FULLSCREEN is written on its own line and isn't passed to set_mode, so it doesn't actually trigger fullscreen I think.  
+
+Overall, it's a fantastic job!
  
